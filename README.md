@@ -7,8 +7,6 @@ The ML potential based on the C++ code
 
 1. Copy all the files in src to LAMMPS/src directory
 2. Compile LAMMPS
-3. The ML file named Param_ML_pot.txt, it contains all the ML parameters.
-
 
 
 === Run the simple LIT test ===
