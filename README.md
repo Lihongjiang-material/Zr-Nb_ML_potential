@@ -13,9 +13,11 @@ The ML potential based on the C++ code
 
 In the file LIT_example/omega_300k_0GPa_npt, all the necessary files are provided, including LAMMPS in file, omega data file and Param_ML_pot.txt
 run the example will see the LIT in the omega.
+
 ./lmp_serial < LIT_example/omega_300k_0GPa_npt/in.npt
 
 === Credits and license ===
 
 This compute was written by H. Li (lihjmaterial@163.com) and H. Zong (zonghust@mail.xjtu.edu.cn) and is licensed under the GPLv2 license.
+
 Please contribute changes back to the community.
