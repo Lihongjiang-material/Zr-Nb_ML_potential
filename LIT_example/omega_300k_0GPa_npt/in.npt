@@ -1,0 +1,32 @@
+#MC+MD Simulation 
+#shell           mkdir cfg
+shell           mkdir dump
+units		metal
+boundary	p p p
+atom_style	atomic
+
+read_data	data.ZrNb
+
+thermo		100
+
+timestep        0.001
+pair_style      ml/energy 1 -6.25
+pair_coeff      * *  Param_ML_pot.txt Zr Nb
+
+mass            1 91.22
+mass            2 92.91
+
+neighbor	2.0 bin
+neigh_modify	every 5 delay 0 check yes
+
+thermo_style	custom step temp pe etotal lx ly lz pxx pyy pzz
+min_style       sd
+
+fix             1 all npt temp 300 300 0.1 iso 0.1 0.1 0.1 drag 0.2
+
+dump            2 all custom 2000 dump/dump.* id type x y z 
+
+dump_modify     2 sort id
+
+run             30000
+
