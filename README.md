@@ -17,7 +17,7 @@ run the example will see the LIT in the omega.
 ./lmp_serial < LIT_example/omega_300k_0GPa_npt/in.npt
 
 
-=== Share data of 'Regulation of athermal ω formation by one-dimensional chemical ordering in Zr-10%Nb alloys'===
+=== Data of 'Regulation of athermal ω formation by one-dimensional chemical ordering in Zr-10%Nb alloys'===
 
 The datasets relevant to this thesis have been published on the GitHub Releases board. The necessary data files can be located and downloaded from the project's Releases page.
 
